@@ -20,7 +20,7 @@ output = np.arange(10, 51)
 output = np.arange(10, 51, 2)
 
 #	Create a 3x3 matrix with values ranging from 0 to 8
-output = np.arange(0,9).reshape(3,3)
+output = np.arange(9).reshape(3,3)
 
 #	Create a 3x3 identity matrix
 output = np.eye(3)
@@ -45,7 +45,7 @@ output = np.random.randn(25)
 #       [ 0.81,  0.82,  0.83,  0.84,  0.85,  0.86,  0.87,  0.88,  0.89,  0.9 ],
 #       [ 0.91,  0.92,  0.93,  0.94,  0.95,  0.96,  0.97,  0.98,  0.99,  1.  ]])
 
-output = np.linspace(0, 1, 101)
+output = np.linspace(0.01, 1, 100).reshape(10,10)
 
 #	Create an array of 20 linearly spaced points between 0 and 1:
 output = np.linspace(0, 1, 20)
@@ -67,7 +67,7 @@ output = mat[3, -1]
 # array([[ 2],
 #       [ 7],
 #       [12]])
-output = mat[0:3, 1].reshape(3, 1)
+output = mat[:3, 1:2]
 
 # array([21, 22, 23, 24, 25])
 output = mat[-1, :]
